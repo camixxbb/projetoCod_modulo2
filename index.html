@@ -1,0 +1,88 @@
+<!--O seguinte código é uma cópia\inspiração do repositório (url: https://github.com/heitorschumann/Passinho-do-Romano).
+Todos os créditos de grande parte do html, css e 100% do JavaScript ao também aluno do Resilia Heitor Schumann-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>(ﾉ￫ܫ￩)ﾉ Codificando</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+</head>
+<body>
+    <header> <h1>Codificando e Decodificando com Cifra de César e Base64 (♡≧ 𓎺 ≦)=ъ ♡</h1>   </header>
+    <main>
+        <div class="display1e2">
+            <h2>Antes de começarmos, algumas explicações...</h2>
+            <h3>O que é Cifra de César?</h3>
+            <br>
+            <small>A Cifra de César é uma simples e famosa forma de criptogafia de mensagens,
+        sendo usada por Júlio César para esconder suas mensagens de cunho militar. 
+        "É um tipo de cifra de substituição na qual cada letra do texto é substituída 
+        por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. 
+        Por exemplo, com uma troca de três posições, A seria substituído por D, B se 
+        tornaria E, e assim por diante." (fonte: Wikipedia (2022)).
+            </small>
+            <br>
+            <br>
+            <h3>E o que é Base64?</h3>
+            <br>
+            <small>Base64 é um algoritmo de codificação que transforma qualquer caractere de qualquer
+        idioma em uma codificação que contém letras latinas, digítos e sinais, sendo muito
+        usado para transmitir códigos binários. "Seu alfabeto é constituído por 64 caracteres 
+        ([A-Z],[a-z],[0-9], “/” e “+”), o que deu  origem ao seu nome. O carácter = é utilizado 
+        como um sufixo especial e a especificação original (RFC 989) definiu que o símbolo * pode 
+        ser utilizado para delimitar dados convertidos, mas não criptografados, dentro de um stream." (fonte: https://marquesfernandes.com/self/o-que-e-base64-para-que-serve-e-como-funciona/)
+            </small>
+            <h2>Codificações explicadas, vamos à parte mais divertida: Codificar ou Decodificar a SUA mensagem!</h2><br>
+            <form>
+                <label for="mensagem">Digite abaixo a mensagem que desejar</label><br>
+                <input type="text" name="mensagem" id="mensagem" placeholder="Sua Mensagem" required><br>
+
+                <label>Selecione o seu método de decodificação</label><br>
+
+                <select id="select">
+                    <!--<option value="">*** Selecionar ***</option>-->
+                    <option value="Base64" > >> Base64</option>
+                    <option value="cifraCesar"> >> Cifra de César</option>
+                </select>
+
+
+                <label for="numeroCesar" class="incremento">Digite o incremento utilizado na cifra</label>
+                <input type="number" id="numeroCesar" ><br>
+
+
+                <label class="escolha">O que deseja fazer?</label><br><br>
+
+                <div class="radio">
+                    <input type="radio" id="codificar" name="codDecod" value="codificar" checked>
+                    <label for="codificar">Codificar</label><br>
+
+                    <input type="radio" id="decodificar" name="codDecod" value="decodificar">
+                    <label for="decodificar">Decodificar</label>
+                </div>
+                
+
+                <div class="">
+                    <h2 class="hMensagem"></h2><br>
+                    <p class="pMensagem"></p>
+                </div>
+
+                <input type="submit" value="Codificar Mensagem!" id="submit">
+            </form>
+
+            <div class="footerContainer">
+                 Camilla Rodrigues - 2022 - <a href="https://github.com/camixxbb" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/camilla-rodrigues-8a74a1159/" target="_blank">LinkedIn</a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
